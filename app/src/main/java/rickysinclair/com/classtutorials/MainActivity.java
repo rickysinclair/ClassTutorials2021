@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toastMsg(String msg) {
-        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG);
-        toast.show();
+        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_LONG); //creates a pop up message
+        toast.show(); //displays message
     }
 
     public void onClick(View view) {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         String content = editPassword.getText().toString(); //gets you the contents of edit text
 
         if (content.equals("Password")) {
-            startActivity(new Intent(MainActivity.this,MainActivity2.class));
+            startActivity(new Intent(MainActivity.this,MainActivity2.class)); //navigate to another activity
         } else {
             toastMsg("Wrong PW Bruv!!!");
         }
